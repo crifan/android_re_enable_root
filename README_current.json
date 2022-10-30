@@ -1,0 +1,7 @@
+{
+  "latestVersion": "v0.6",
+  "lastUpdate": "20221030",
+  "gitRepoName": "android_re_enable_root",
+  "bookName": "Android逆向：开启root",
+  "bookDescription": "总结安卓逆向期间涉及的给安卓root。先是概览；然后是分别介绍安卓模拟器和安卓真机的root；之后详细介绍安卓真机的root的流程，包括Bootloader解锁、fastboot mode等，和涉及到的工具：TWRP、Magisk等；以及相关知识和设备：A/B槽位、OPPO R11s的root；然后整理root心得。"
+}
