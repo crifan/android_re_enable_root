@@ -1,6 +1,6 @@
 {
   "title": "Android逆向：开启root",
-  "description": "总结安卓逆向期间涉及的给安卓root。先是概览；然后是分别介绍安卓模拟器和安卓真机的root；之后详细介绍安卓真机的root的流程，包括Bootloader解锁、fastboot mode等，和涉及到的工具：TWRP、Magisk等；以及相关知识和设备：A/B槽位、OPPO R11s的root；然后整理root心得。",
+  "description": "总结安卓逆向期间涉及的给安卓root。先是概览；然后是分别介绍安卓模拟器和安卓真机的root；之后详细介绍安卓真机的root的流程，包括Bootloader解锁、fastboot mode等，和涉及到的工具：TWRP、Magisk等；并且用实例去介绍如何给Android13的Pixel5去root，包括下载安装最新版Magisk、解锁Bootloader、用Magisk去给boot.img打patch、用Magisk写入patch后的boot.img和Magisk中root相关设置。以及相关知识和设备：A/B槽位、OPPO R11s的root；以及整理root相关心得。",
   "pluginsConfig": {
     "github-buttons": {
       "buttons": [
