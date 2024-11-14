@@ -1,23 +1,6 @@
 # 用Magisk去给boot.img打patch
 
-先去从Android官网，下载适配当前安卓手机Pixel5的镜像image：
-
-* [Nexus 和 Pixel 设备的出厂映像  |  Google Play services  |  Google for Developers](https://developers.google.cn/android/images)
-  * https://developers.google.cn/android/images
-
-->
-
-https://dl.google.com/dl/android/aosp/redfin-tq3a.230805.001.a2-factory-dedaff69.zip?hl=zh-cn
-
-下载得到：`redfin-tq3a.230805.001.a2-factory-dedaff69.zip`
-
-解压得到得到文件夹：`redfin-tq3a.230805.001.a2`
-
-找到：`redfin-tq3a.230805.001.a2/image-redfin-tq3a.230805.001.a2`中的（96MB的）`boot.img`
-
-![pixel5_boot_img](../../assets/img/pixel5_boot_img.png)
-
-将其下载到Pixel5手机中（的下载目录）：
+将`boot.img`下载到Pixel5手机中（的下载目录）：
 
 ```bash
 adb push boot.img /sdcard/Download
@@ -46,3 +29,8 @@ adb push boot.img /sdcard/Download
       * `/storage/emulated/0/Download/magisk_patched-26100_bMrsR.img`
         * == `/sdcard/Download/magisk_patched-26100_bMrsR.img`
       * 就是我们要的，打好了`patch`的`boot.img`
+  * 把打了patch的`boot.img`上传到电脑端，供后续使用
+    * 把此处打了patch的`boot.img`是`magisk_patched-26100_bMrsR.img`，从安卓手机中上传到电脑（Mac）中
+      ```bash
+      adb pull /sdcard/Download/magisk_patched-26100_bMrsR.img .
+      ```
